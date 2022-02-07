@@ -1,0 +1,175 @@
+.header{
+    color:aliceblue;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin:5px auto;
+    width: 600px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.header span{
+    color: rgb(253, 130, 59);
+}
+.container{
+    width: 630px;
+    display: flex;
+     /* justify-content: center; */
+    height: 600px;
+    margin:2px auto;
+    flex-wrap: wrap;
+    font-weight: 700;
+
+}
+.square{
+    width: 190px;
+    height: 190px;
+    background-color: black;
+   margin: 0 4px;
+   font-size: 130px;
+   color:white;
+   font: 900;
+   text-align: center;
+   font-family: sans-serif;
+   position: relative;
+   top: 10px;
+   left: 5px;
+   padding: 0 5px;
+   transition: all 1s;
+   cursor: pointer; 
+}
+.square:hover{
+    background-color:rgb(253, 130, 59) ;
+}
+.reload{
+   width:300px;
+    height:300px;
+    background-color: rgb(25, 0, 255);
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+
+}
+.reload button{
+     display: block;
+     margin: auto;
+     position: relative;
+     top:30%;
+     background-color: rgb(253, 130, 59);
+      color: black;
+      padding: 7px  14px;
+      border: none;
+      border-radius:5px ;
+      cursor: pointer;
+      transition: all 1s;
+}
+.reload p{
+    position: relative;
+    left: 70px;
+    top:70px;
+    font-size: 25px;
+    color:   rgb(253, 130, 59);
+    font-family: sans-serif;
+    width: 150px;
+    text-align: center;
+}
+.reload button:hover{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+.name{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width:767px){
+    .header{
+        width: 440px;
+        font-size: 25px;
+    }
+    .container{
+        width: 450px;
+        height: 420px;
+    }
+    .square{
+        width:132px ;
+        height:135px;
+        font-size:100px;
+    }
+}
+@media(max-width:500px){
+    .header{
+        width: 320px;
+        font-size: 25px;
+    }
+    .container{
+        width: 320px;
+        height: 300px;
+    }
+    .square{
+        width:85px ;
+        height:90px;
+        font-size:80px;
+    }
+    .reload{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top:40%;
+    }
+    .reload p{
+        position: relative;
+        left: 35px;
+        top:40px;
+        font-size: 16px;
+    }
+}
+@media(max-width:330px){
+    .header{
+        width: 190px;
+        font-size: 16px;
+    }
+    .container{
+        width: 210px;
+        height: 180px;
+    }
+    .square{
+        width:50px ;
+        height:50px;
+        font-size:40px;
+    }
+    .location{
+        position: relative;
+        top:60px;
+    }
+    .reload{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top:40%;
+    }
+    .reload p{
+        position: relative;
+        left: 25px;
+        top:30px;
+        font-size: 14px;
+        width:100px
+    }
+    .reload button{
+        position: relative;
+        top:20%;
+        padding: 5px 10px;
+        
+    }
+}
+body{
+    background-color: rgb(97, 207, 103);
+}
